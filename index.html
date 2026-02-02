@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodegón Bayona 59 - Productos Gourmet | La Habana</title>
+    <meta name="description" content="Tienda gourmet en La Habana. Productos alimenticios premium, vinos, conservas y delicatessen. Envíos a toda la ciudad. Calidad y tradición cubana.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header con Navegación -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Bodegón</span>
+                    <span class="logo-subtext">Bayona 59</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="#" class="btn-carrito"><i class="fas fa-shopping-basket"></i> <span class="carrito-count">0</span></a>
+                </div>
+                
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con efectos -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">Auténticos Sabores de <span class="highlight">La Habana</span></h1>
+            <p class="hero-subtitle animate-fade-up-delay">Productos gourmet seleccionados con tradición cubana. Envíos a toda la ciudad.</p>
+            <a href="#productos" class="btn-primary animate-fade-up-delay-2">Ver Productos <i class="fas fa-arrow-down"></i></a>
+        </div>
+        
+        <div class="hero-images">
+            <div class="hero-img img-1 animate-float"></div>
+            <div class="hero-img img-2 animate-float-delay"></div>
+            <div class="hero-img img-3 animate-float-delay-2"></div>
+        </div>
+    </section>
+
+    <!-- Sección Productos Destacados -->
+    <section class="productos-section" id="productos">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Nuestros <span class="highlight">Productos</span></h2>
+                <p>Selección cuidadosa de lo mejor para tu mesa</p>
+            </div>
+            
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <div class="producto-card animate-on-scroll">
+                    <div class="producto-img">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Café cubano premium" loading="lazy">
+                        <span class="producto-badge">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Café Cubano Premium</h3>
+                        <p class="producto-desc">Café 100% arábico cultivado en las montañas de Cuba.</p>
+                        <div class="producto-precio">$15.99 <span class="producto-unidad">/ 500g</span></div>
+                        <button class="btn-agregar" data-producto="cafe-cubano" data-precio="15.99">
+                            <i class="fas fa-plus"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="producto-card animate-on-scroll">
+                    <div class="producto-img">
+                        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ron añejo cubano" loading="lazy">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Ron Añejo 7 Años</h3>
+                        <p class="producto-desc">Ron cubano envejido en barricas de roble. Sabor suave y aromático.</p>
+                        <div class="producto-precio">$24.99 <span class="producto-unidad">/ 750ml</span></div>
+                        <button class="btn-agregar" data-producto="ron-anejo" data-precio="24.99">
+                            <i class="fas fa-plus"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="producto-card animate-on-scroll">
+                    <div class="producto-img">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Miel natural cubana" loading="lazy">
+                        <span class="producto-badge destacado">Destacado</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Miel Natural Pura</h3>
+                        <p class="producto-desc">Miel 100% natural de abejas cubanas. Sin aditivos ni conservantes.</p>
+                        <div class="producto-precio">$9.99 <span class="producto-unidad">/ 350g</span></div>
+                        <button class="btn-agregar" data-producto="miel-natural" data-precio="9.99">
+                            <i class="fas fa-plus"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="producto-card animate-on-scroll">
+                    <div class="producto-img">
+                        <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Conservas artesanales" loading="lazy">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Conservas Artesanales</h3>
+                        <p class="producto-desc">Selección de conservas caseras: vegetales, frutas y condimentos.</p>
+                        <div class="producto-precio">$12.50 <span class="producto-unidad">/ unidad</span></div>
+                        <button class="btn-agregar" data-producto="conservas" data-precio="12.50">
+                            <i class="fas fa-plus"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center animate-on-scroll">
+                <a href="#catalogo" class="btn-secondary">Ver Catálogo Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros-section" id="nosotros">
+        <div class="container">
+            <div class="nosotros-grid">
+                <div class="nosotros-img animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1556909114-ff35346a06f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior Bodegón Bayona 59" loading="lazy">
+                </div>
+                <div class="nosotros-content animate-on-scroll">
+                    <h2>Nuestra <span class="highlight">Historia</span> en La Habana</h2>
+                    <p>Desde nuestra ubicación en <strong>Bayona 59, La Habana</strong>, nos dedicamos a seleccionar los mejores productos gourmet con sello cubano.</p>
+                    <p>Somos un puente entre la tradición local y los paladares exigentes, ofreciendo calidad, autenticidad y el sabor único de nuestra tierra.</p>
+                    <div class="nosotros-stats">
+                        <div class="stat">
+                            <div class="stat-num" data-count="150">0</div>
+                            <div class="stat-label">Productos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-count="12">0</div>
+                            <div class="stat-label">Años</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-count="2000">0</div>
+                            <div class="stat-label">Clientes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto y Localización -->
+    <section class="contacto-section" id="contacto">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Visítanos en <span class="highlight">La Habana</span></h2>
+                <p>Ven a conocer nuestros productos directamente en nuestra bodega</p>
+            </div>
+            
+            <div class="contacto-grid">
+                <div class="contacto-info animate-on-scroll">
+                    <h3><i class="fas fa-map-marker-alt"></i> Nuestra Ubicación</h3>
+                    <p><strong>Bodegón Bayona 59</strong><br>
+                    Calle Bayona #59, La Habana, Cuba</p>
+                    
+                    <h3><i class="fas fa-clock"></i> Horarios</h3>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                    Sábados: 9:00 AM - 2:00 PM<br>
+                    Domingos: Cerrado</p>
+                    
+                    <h3><i class="fas fa-phone-alt"></i> Contacto</h3>
+                    <p>Teléfono: +53 123 456 78<br>
+                    WhatsApp: +53 987 654 32<br>
+                    Email: info@bodegonbayona59.cu</p>
+                    
+                    <div class="whatsapp-cta">
+                        <a href="https://wa.me/5398765432" class="btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mapa animate-on-scroll">
+                    <!-- Mapa de Google Maps embed -->
+                    <div class="mapa-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.693580932938!2d-82.39165592504026!3d23.099126079136407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd7e8c8b9a3c3b%3A0x5c81c165184b2f0c!2sLa%20Habana%2C%20Cuba!5e0!3m2!1ses!2ses!4v1698281738280!5m2!1ses!2ses" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Bodegón Bayona 59 en La Habana"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito Flotante -->
+    <div class="carrito-flotante" id="carritoFlotante">
+        <div class="carrito-header">
+            <h3><i class="fas fa-shopping-basket"></i> Tu Carrito</h3>
+            <button class="cerrar-carrito" id="cerrarCarrito">&times;</button>
+        </div>
+        <div class="carrito-items" id="carritoItems">
+            <!-- Items se añaden dinámicamente -->
+            <p class="carrito-vacio">Tu carrito está vacío</p>
+        </div>
+        <div class="carrito-footer">
+            <div class="carrito-total">
+                Total: $<span id="carritoTotal">0.00</span>
+            </div>
+            <button class="btn-checkout" id="checkoutBtn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-text">Bodegón</span>
+                        <span class="logo-subtext">Bayona 59</span>
+                    </div>
+                    <p>Productos gourmet cubanos de la más alta calidad. Tradición y sabor en cada producto.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Políticas</h4>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Envíos y entregas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe nuestras ofertas y novedades</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bodegón Bayona 59 - La Habana, Cuba. Todos los derechos reservados.</p>
+                <p class="seo-text">Tienda online de productos gourmet cubanos | Venta de café cubano, ron añejo, miel natural y conservas artesanales | Envíos a toda La Habana | Dirección: Bayona 59, La Habana Vieja</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
